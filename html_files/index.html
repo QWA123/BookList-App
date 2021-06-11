@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/712d4d1a46.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css_files/styles.css" />
+    <script src="/js_files/app.js" defer></script>
+    <title>MyBookList App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <i class="fas fa-book-open fa-8x"></i>
+        <h1>My <span>Book</span> List</h1>
+      </div>
+      <form action="" id="book-form">
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input
+            type="text"
+            id="title"
+            class="form-control"
+            placeholder="Enter book title"
+          />
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input
+            type="text"
+            id="author"
+            class="form-control"
+            placeholder="Enter Author Name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="isbn">ISBN#</label>
+          <input
+            type="text"
+            id="isbn"
+            class="form-control"
+            placeholder="Enter ISBN"
+          />
+        </div>
+        <input type="submit" value="Add Book" class="btn" />
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN#</th>
+            <th></th>
+            <!-- take into account the delete button -->
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+  </body>
+</html>
